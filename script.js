@@ -166,9 +166,6 @@ $('.menu-container-mobile ul').on('click', '.header-menu', function() {
 
 $('.header-image, .content-container').on('mouseenter', hideMenu);
 
-$('.menu-sub-mobile, .menu-container-mobile,').on('scroll', function(event) {
-  event.stopPropagation();
-});
 
-$('body').on('scroll click', hideMenu);
+$(document).on('scroll', hideMenu);
 
